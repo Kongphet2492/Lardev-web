@@ -3,13 +3,6 @@
 \*-----------------------------------*/
 
 /**
- * copyright 2022 codewithsadee
- */
-
-
-
-
-
 /*-----------------------------------*\
   #CUSTOM PROPERTY
 \*-----------------------------------*/
@@ -38,9 +31,9 @@
    * typography
    */
 
-  --ff-jost: 'Jost', sans-serif;
+  --ff-jost: 'Noto Sans Lao', 'Jost', sans-serif;
 
-  --fs-1: 3.8rem;
+  --fs-1: 3.2rem;
   --fs-2: 2.2rem;
   --fs-3: 2rem;
   --fs-4: 1.8rem;
@@ -163,7 +156,7 @@ body.active { overflow: hidden; }
 .h3,
 .h4 {
   color: var(--gunmetal);
-  line-height: 1.3;
+  line-height: 1.0;
 }
 
 .h1,
@@ -301,7 +294,8 @@ body.active { overflow: hidden; }
   width: 100%;
   padding-block: 25px;
   z-index: 4;
-}
+  background-color: var(--white);  /* ເພີ່ມເຂົ້າໃໝ່ */
+  }
 
 .header.active {
   position: fixed;
@@ -400,7 +394,16 @@ body.active { overflow: hidden; }
   #HERO
 \*-----------------------------------*/
 
-.hero { padding-block-start: calc(var(--section-padding) + 90px); }
+.hero { 
+  width: 100%;
+  height: 90vh;
+  padding-block-start: calc(var(--section-padding) + 90px); 
+  background: url("../images/Bg-home-page.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
 
 .hero .container {
   display: grid;
@@ -459,6 +462,12 @@ body.active { overflow: hidden; }
 /*-----------------------------------*\
   #ABOUT
 \*-----------------------------------*/
+.about-title{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
 
 .about .container {
   display: grid;
