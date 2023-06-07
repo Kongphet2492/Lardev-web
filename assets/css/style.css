@@ -14,7 +14,7 @@
    */
 
   --sefety-orange_10: hsla(24, 100%, 50%, 0.1);
-  --sefety-orange: hsl(24, 100%, 50%);
+  --sefety-orange: hsl(350, 100%, 50%);
   --sonic-silver: hsl(220, 1%, 48%);
   --gunmetal_10: hsla(217, 21%, 16%, 0.1);
   --davys-gray: hsl(220, 2%, 31%);
@@ -406,12 +406,15 @@ body.active { overflow: hidden; }
 }
 
 .hero .container {
-  display: grid;
-  gap: 40px;
+  text-align: center;
+  /* display: grid; */
+  /* gap: 40px; */
 }
 
 
-.hero .section-text { margin-block: 25px 40px; }
+.hero .section-text { 
+  margin-block: 25px 40px;
+}
 
 .hero-banner .w-100 {
   max-width: 50%;
